@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+coverage/
+.data/
+*.tsbuildinfo
+next-env.d.ts
+.env
+.env.local
+.env.*.local
+.DS_Store
+npm-debug.log*
+test-results/
+playwright-report/
+
+# AI-generated design mockups (contain fictional clinicians/KPIs); kept locally, not published
+docs/mockdocs/

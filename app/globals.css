@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #087f8c;
+  --color-brand-dark: #066674;
+  --color-brand-pale: #e8f6f7;
+  --color-ink: #152338;
+  --color-ink-2: #59677a;
+  --color-line: #dce5ec;
+  --color-canvas: #f6f9fb;
+  --color-ok: #1d7a46;
+  --color-ok-pale: #e6f4ec;
+  --color-warn: #8a5a00;
+  --color-warn-pale: #fdf3dc;
+  --color-danger: #b42318;
+  --color-danger-pale: #fdecea;
+  --color-info: #1f5fbf;
+  --color-info-pale: #e8f0fc;
+  --color-violet: #5b3fb5;
+  --color-violet-pale: #efeafc;
+  --font-sans: ui-sans-serif, -apple-system, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --shadow-card: 0 1px 2px rgba(21, 35, 56, 0.04), 0 1px 3px rgba(21, 35, 56, 0.06);
+}
+
+html { color-scheme: light; }
+body { background: var(--color-canvas); color: var(--color-ink); }
+
+/* Visible focus for keyboard users everywhere. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.evidence-mark { background: #fff1c2; border-bottom: 2px solid #d39b00; border-radius: 2px; }
+.evidence-mark-active { background: #ffe08a; }
